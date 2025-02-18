@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/icon1.png" type="image/x-icon" />
+    <title>Cipati_Bubur_Hanjeli</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      .image-rotation-r {
+        z-index: -99;
+        animation: spin 50000ms linear infinite;
+      }
+
+      .image-rotation-l {
+        z-index: -99;
+        animation: spin 50000ms linear infinite reverse;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Navbar Section Start -->
+    <header class="fixed z-50 w-full">
+      <nav class="bg-white border-gray-200">
+        <div
+          class="xl:max-w-screen-2xl mx-auto flex flex-wrap items-center justify-between mx-auto p-4 sm:px-12 lg:px-32"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./images/icon1.png" class="h-10" alt="Logo" />
+            <span class="self-center text-xl font-medium whitespace-nowrap"
+              >BuburHanjeli</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-normal flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="block py-2 px-3 rounded hover:bg-emerald-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 px-3 rounded hover:bg-emerald-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="block py-2 px-3 rounded hover:bg-emerald-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0"
+                  >Layanan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="block py-2 px-3 rounded hover:bg-emerald-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blogs"
+                  class="block py-2 px-3 rounded hover:bg-emerald-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 px-3 rounded hover:bg-emerald-600 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-emerald-600 md:p-0"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="w-full relative overflow-hidden">
+      <div
+        class="xl:max-w-screen-2xl mx-auto flex flex-col-reverse flex-wrap md:flex-row items-center justify-center md:justify-between mx-auto px-4 sm:px-12 lg:px-32 min-h-screen"
+      >
+        <div class="text-center md:text-start md:w-1/2">
+          <h1
+            class="mb-5 lg:mb-10 text-balancer text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            Mengenalkan <span class="text-emerald-600">Tradisi</span>
+            <span class="text-emerald-600">Leluhur</span>,Menginspirasi Gaya Hidup
+            <span class="text-orange-400">Masa Kini!</span>
+          </h1>
+          <p
+            class="mb-10 text-gray-600 lg:text-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            Bubur Hanjeli instan yang sehat,praktis,dan kaya gizi,hadir untuk menemani
+            keseharian Anda dengan cita rasa tradisional yang berpadu dengan kebutuhan
+            masyarakat modern.
+          </p>
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <a
+              href="#introduction"
+              class="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:outline-none focus:ring-emerald-400 font-medium rounded-xl hover:shadow-lg text-sm px-6 py-4 duration-500"
+              >Mulai Sekarang</a
+            >
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center md:w-1/2 relative overflow-hidden"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img
+            src="./images/image-hero1.png"
+            class="w-56 md:w-full mb-10 md:mb-0 object-contain"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/circle-1.png"
+          class="absolute w-56 lg:w-auto top-20 -left-10 image-rotation-r"
+          alt="Circle Decoration 1"
+        />
+        <img
+          src="./images/circle-2.png"
+          class="absolute w-56 bottom-10 right-10 lg:right-20 image-rotation-l"
+          alt="Circle Decoration 2"
+        />
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Introduction Section Start -->
+    <section id="introduction" class="relative">
+      <div
+        class="xl:max-w-screen-2xl mx-auto flex flex-col items-center justify-center px-4 sm:px-12 lg:px-32 py-24 min-h-screen"
+      >
+        <div class="mb-5 lg:mb-10 mx-auto md:max-w-screen-md text-center">
+          <h2
+            class="mb-5 font-semibold text-emerald-600 text-2xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Pengenalan
+          </h2>
+          <p
+            class="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            Apa Sih Bubur Hanjeli Itu?
+          </p>
+        </div>
+        <div class="flex justify-center w-full">
+          <iframe
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            class="rounded-xl w-[720px] h-[250px] md:h-[315px] lg:h-[405px] bg-red-500"
+            src="https://www.youtube.com/embed/UXavIcLUM9U?si=V-GOsBk16uDaMMDK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div
+        class="h-80 w-full bg-gradient-to-b from-emerald-400 to-emerald-600 absolute bottom-0 -z-10"
+      ></div>
+    </section>
+    <!-- Introduction Section End -->
+
+    <!-- Reasons Section Start -->
+    <section id="reasons">
+      <div
+        class="xl:max-w-screen-2xl mx-auto flex flex-col items-center justify-center px-4 sm:px-12 lg:px-32 py-24 min-h-screen"
+      >
+        <div class="mb-5 lg:mb-10 mx-auto md:max-w-screen-md text-center">
+          <h2
+            class="mb-5 font-semibold text-emerald-600 text-2xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+          Keunggulan Produk
+          </h2>
+          <p
+            class="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+          Kenapa Harus Bubur Hanjeli Instan
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap flex-col md:flex-row gap-5 justify-center items-center"
+        >
+          <div
+            class="max-w-sm min-h-64 flex flex-col border rounded-xl p-6 hover:shadow-2xl hover:bg-emerald-600 hover:text-white duration-500"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="flex items-center mb-3 lg:mb-5">
+              <span
+                class="text-2xl h-12 w-12 flex justify-center items-center bg-gray-100 rounded-full text-emerald-600 mr-3"
+              >
+              <i class="fa-solid fa-hundred-points"></i>
+              </span>
+              <h4 class="font-bold lg:text-lg">100% Bahan Alami</h4>
+            </div>
+            <p>
+              Bubur Hanjeli terbuat dari bahan alami berkualitas tanpa
+              tambahan bahan kimia atau pengawet, menjadikannya pilihan
+              sehat untuk Anda dan keluarga.
+            </p>
+          </div>
+          <div
+            class="max-w-sm min-h-64 flex flex-col border rounded-xl p-6 hover:shadow-2xl hover:bg-emerald-600 hover:text-white duration-500"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="flex items-center mb-3 lg:mb-5">
+              <span
+                class="text-2xl h-12 w-12 flex justify-center items-center bg-gray-100 rounded-full text-emerald-600 mr-3"
+              >
+              <i class="fa-brands fa-nutritionix"></i>
+              </span>
+              <h4 class="font-bold lg:text-lg">Kaya Serat & Nutrisi</h4>
+            </div>
+            <p>
+              Kandungan serat alami dari hanjeli membantu melancarkan pencernaan,
+              menjaga kesehatan usus, dan memberikan energi yang tahan lama.
+            </p>
+          </div>
+          <div
+            class="max-w-sm min-h-64 flex flex-col border rounded-xl p-6 hover:shadow-2xl hover:bg-emerald-600 hover:text-white duration-500"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <div class="flex items-center mb-3 lg:mb-5">
+              <span
+                class="text-2xl h-12 w-12 flex justify-center items-center bg-gray-100 rounded-full text-emerald-600 mr-3"
+              >
+              <i class="fa-solid fa-seedling"></i>
+              </span>
+              <h4 class="font-bold lg:text-lg">Ramah Lingkungan</h4>
+            </div>
+            <p>
+              Kami berkomitmen mendukung petani lokal dengan bahan baku berkelanjutan,
+              sehingga setiap pembelian Anda turut membantu menjaga kelestarian lingkungan.
+            </p>
+          </div>
+          <div
+            class="max-w-sm min-h-64 flex flex-col border rounded-xl p-6 hover:shadow-2xl hover:bg-emerald-600 hover:text-white duration-500"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <div class="flex items-center mb-3 lg:mb-5">
+              <span
+                class="text-2xl h-12 w-12 flex justify-center items-center bg-gray-100 rounded-full text-emerald-600 mr-3"
+              >
+              <i class="fa-solid fa-tags"></i>
+              </span>
+              <h4 class="font-bold lg:text-lg">Harga Terjangkau</h4>
+            </div>
+            <p>
+              Nikmati manfaat kesehatan dengan harga yang bersahabat,
+              karena kami percaya bahwa makanan sehat harus dapat diakses oleh semua orang.
+            </p>
+          </div>
+          <div
+            class="max-w-sm min-h-64 flex flex-col border rounded-xl p-6 hover:shadow-2xl hover:bg-emerald-600 hover:text-white duration-500"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <div class="flex items-center mb-3 lg:mb-5">
+              <span
+                class="text-2xl h-12 w-12 flex justify-center items-center bg-gray-100 rounded-full text-emerald-600 mr-3"
+              >
+              <i class="fa-solid fa-plate-wheat"></i>
+              </span>
+              <h4 class="font-bold lg:text-lg">Rasa Lezat & Unik</h4>
+            </div>
+            <p>
+              Tersedia dalam berbagai varian rasa, dari yang klasik hingga kekinian,
+              memberikan pengalaman kuliner yang menggugah selera.
+            </p>
+          </div>
+          <div
+            class="max-w-sm min-h-64 flex flex-col border rounded-xl p-6 hover:shadow-2xl hover:bg-emerald-600 hover:text-white duration-500"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <div class="flex items-center mb-3 lg:mb-5">
+              <span
+                class="text-2xl h-12 w-12 flex justify-center items-center bg-gray-100 rounded-full text-emerald-600 mr-3"
+              >
+              <i class="fa-solid fa-bowl-rice"></i>
+              </span>
+              <h4 class="font-bold lg:text-lg">Praktis Dibawa ke Mana Saja</h4>
+            </div>
+            <p>
+              Dikemas dalam bentuk instan yang mudah disajikan, cocok untuk teman perjalanan,
+              sarapan praktis, atau camilan sehat kapan pun.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reasons Section End -->
+
+    <!-- Solutions Section Start -->
+    <!-- Solutions Section End -->
+
+    <!-- About Section Start  -->
+    <section id="about" class="bg-emerald-600">
+      <div
+        class="xl:max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-center px-4 sm:px-12 lg:px-32 py-24 min-h-screen"
+      >
+        <div
+          class="mb-5 md:mb-0 flex justify-center items-center w-full md:w-1/2"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <img src="./images/image-about1.png" class="w-2/3 lg:w-auto" alt="" />
+        </div>
+        <div class="text-center md:text-start flex flex-col w-full md:w-1/2">
+          <span
+            class="mb-5 font-semibold text-white"
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            >Tentang Kami</span
+          >
+          <h2
+            class="mb-5 text-white text-3xl md:text-4xl lg:text-5xl font-semibold lg:w-4/5"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+          Tradisi Alam, Nutrisi
+            <span class="text-orange-400">Masa Kini!</span>
+          </h2>
+          <p
+            class="text-white"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+          Cipati Bubur Hanjeli merupakan usaha yang bergerak di industri makanan dan minuman yang berfokus pada olahan pangan berbahan dasar biji hanjeli. Usaha ini didirikan oleh 4 orang mahasiswa, yang terdiri dari 3 orang mahasiswa Fakultas Komputer dan 1 orang mahasiswa Fakultas Ekonomi dan Bisnis di Universitas Kuningan. Pembentukan usaha ini merupakan sebuah bentuk manifestasi dari setiap ide mahasiswa yang berkeinginan untuk menciptakan produk makanan dan minuman yang menyehatkan bagi semua orang dengan harga yang ekonomis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End  -->
+
+    <!-- Services Section Start -->
+    <section id="services">
+      <div
+        class="xl:max-w-screen-2xl mx-auto flex flex-col items-center justify-center px-4 sm:px-12 lg:px-32 py-24 min-h-screen"
+      >
+        <div class="mb-5 lg:mb-10 mx-auto md:max-w-screen-md text-center">
+          <h2
+            class="mb-5 font-semibold text-emerald-600 text-2xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Layanan
+          </h2>
+          <p
+            class="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            Kami Menyediakan Layanan terhadap pelanggan melalui platform digital.
+          </p>
+        </div>
+        <div
+          class="flex flex-wrap flex-col md:flex-row gap-5 justify-center items-center"
+        >
+          <div
+            class="max-w-sm flex flex-col items-center text-center border rounded-xl py-10 px-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <span
+              class="text-4xl h-20 w-20 flex justify-center items-center bg-emerald-600 rounded-full text-white mb-3"
+            >
+              <i class="fa-regular fa-user-headset"></i>
+            </span>
+            <h4 class="mb-5 font-bold">Asisten Pribadi</h4>
+            <p class="text-gray-600">
+              yaitu layanan terkait penanganan keluhan-keluhan konsumen
+              atau edukasi mengenai manfaat produk kepada konsumen.
+              layanan ini dapat dilakukan melalui Instagram atau WhatsApp.
+            </p>
+          </div>
+          <div
+            class="max-w-sm flex flex-col items-center text-center border rounded-xl py-10 px-8"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <span
+              class="text-4xl h-20 w-20 flex justify-center items-center bg-emerald-600 rounded-full text-white mb-3"
+            >
+            <i class="fa-solid fa-person-carry-box"></i>
+            </span>
+            <h4 class="mb-5 font-bold">Pelayanan Mandiri</h4>
+            <p class="text-gray-600">
+              yaitu layanan dengan menyediakan informasi secara lengkap untuk 
+              konsumen agar konsumen dapat memperoleh informasi sendiri tanpa 
+              harus berinteraksi dengan penjual,Layanan ini berupa katalog produk.
+            </p>
+          </div>
+          <div
+            class="max-w-sm flex flex-col items-center text-center border rounded-xl py-10 px-8"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <span
+              class="text-4xl h-20 w-20 flex justify-center items-center bg-emerald-600 rounded-full text-white mb-3"
+            >
+            <i class="fa-solid fa-users"></i>
+            </span>
+            <h4 class="mb-5 font-bold">Interaksi di Media Sosial</h4>
+            <p class="text-gray-600">
+              Mengadakan sesi tanya jawab (Q&A), polling, atau giveaway secara rutin di Instagram,
+              TikTok, atau YouTube.Untuk meningkatkan keterlibatan pelanggan dan berbagi pengalaman.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Testimonials Section Start -->
+    <section id="testimonials" class="bg-gray-100">
+      <div class="xl:max-w-screen-2xl mx-auto px-4 sm:px-12 lg:px-32 py-12">
+        <div
+          id="indicators-carousel"
+          class="relative overflow-hidden w-full min-h-screen"
+          data-carousel="static"
+        >
+          <!-- Carousel wrapper -->
+          <div
+            class="relative"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <!-- Item 1 -->
+            <div
+              class="hidden flex justify-center items-center min-h-screen duration-700 ease-in-out"
+              data-carousel-item="active"
+            >
+              <div
+                class="max-w-sm md:max-w-screen-md lg:max-w-screen-lg text-center"
+              >
+                <figure class="mx-auto w-4/5 lg:w-full">
+                  <svg
+                    class="h-12 mx-auto mb-3 text-emerald-400"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p class="text-md md:text-2xl lg:text-3xl font-medium">
+                      "Sejak menggunakan Mindfulcare, saya merasa lebih tenang
+                      dalam menghadapi tugas-tugas kuliah yang menumpuk. Fitur
+                      meditasi terguidnya sangat membantu saya mengelola stres
+                      dan meningkatkan fokus. Saya jadi lebih produktif dan bisa
+                      menikmati proses belajar dengan lebih baik."
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex flex-col items-center justify-center mt-10 space-x-3"
+                  >
+                    <img
+                      class="w-10 h-10 rounded-full mb-5"
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                      alt="profile picture"
+                    />
+                    <div class="flex flex-col items-center">
+                      <h5 class="mb-1 text-2xl font-medium">Ahmad Rifai</h5>
+                      <p class="text-sm font-light text-gray-400">
+                        Teknik Informatika
+                      </p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div
+              class="hidden flex justify-center items-center min-h-screen duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <div
+                class="max-w-sm md:max-w-screen-md lg:max-w-screen-lg text-center"
+              >
+                <figure class="mx-auto w-4/5 lg:w-full">
+                  <svg
+                    class="h-12 mx-auto mb-3 text-emerald-400"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p class="text-md md:text-2xl lg:text-3xl font-medium">
+                      "Dulu, saya sering merasa overwhelmed dengan banyaknya
+                      informasi yang harus saya proses setiap hari. Berkat
+                      Mindfulcare, saya belajar untuk lebih hadir di momen
+                      sekarang dan tidak terlalu larut dalam pikiran negatif.
+                      Kecemasan saya berkurang, dan saya jadi lebih percaya diri
+                      dalam presentasi."
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex flex-col items-center justify-center mt-10 space-x-3"
+                  >
+                    <img
+                      class="w-10 h-10 rounded-full mb-5"
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                      alt="profile picture"
+                    />
+                    <div class="flex flex-col items-center">
+                      <h5 class="mb-1 text-2xl font-medium">Putri Ayu</h5>
+                      <p class="text-sm font-light text-gray-400">
+                        Sistem Informasi
+                      </p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div
+              class="hidden flex justify-center items-center min-h-screen duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <div
+                class="max-w-sm md:max-w-screen-md lg:max-w-screen-lg text-center"
+              >
+                <figure class="mx-auto w-4/5 lg:w-full">
+                  <svg
+                    class="h-12 mx-auto mb-3 text-emerald-400"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p class="text-md md:text-2xl lg:text-3xl font-medium">
+                      "Sebagai mahasiswa IT, saya seringkali duduk berjam-jam di
+                      depan komputer. Mindfulcare mengingatkan saya untuk
+                      sering-sering istirahat dan melakukan peregangan. Fitur
+                      mindfulness-based stress reduction (MBSR) juga sangat
+                      bermanfaat untuk menjaga keseimbangan emosional saya."
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex flex-col items-center justify-center mt-10 space-x-3"
+                  >
+                    <img
+                      class="w-10 h-10 rounded-full mb-5"
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                      alt="profile picture"
+                    />
+                    <div class="flex flex-col items-center">
+                      <h5 class="mb-1 text-2xl font-medium">Bagas Pradana</h5>
+                      <p class="text-sm font-light text-gray-400">
+                        Ilmu Komputer
+                      </p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div
+              class="hidden flex justify-center items-center min-h-screen duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <div
+                class="max-w-sm md:max-w-screen-md lg:max-w-screen-lg text-center"
+              >
+                <figure class="mx-auto w-4/5 lg:w-full">
+                  <svg
+                    class="h-12 mx-auto mb-3 text-emerald-400"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p class="text-md md:text-2xl lg:text-3xl font-medium">
+                      "Saya suka fitur komunitas di Mindfulcare. Bisa berbagi
+                      pengalaman dengan teman-teman sesama mahasiswa yang juga
+                      sedang berjuang menjaga kesehatan mental membuat saya
+                      merasa tidak sendirian. Dukungan dari komunitas ini sangat
+                      berarti bagi saya."
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex flex-col items-center justify-center mt-10 space-x-3"
+                  >
+                    <img
+                      class="w-10 h-10 rounded-full mb-5"
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                      alt="profile picture"
+                    />
+                    <div class="flex flex-col items-center">
+                      <h5 class="mb-1 text-2xl font-medium">Salsabila</h5>
+                      <p class="text-sm font-light text-gray-400">
+                        Teknik Komputer
+                      </p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div
+              class="hidden flex justify-center items-center min-h-screen duration-700 ease-in-out"
+              data-carousel-item
+            >
+              <div
+                class="max-w-sm md:max-w-screen-md lg:max-w-screen-lg text-center"
+              >
+                <figure class="mx-auto w-4/5 lg:w-full">
+                  <svg
+                    class="h-12 mx-auto mb-3 text-emerald-400"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p class="text-md md:text-2xl lg:text-3xl font-medium">
+                      "Mindfulcare telah menjadi bagian penting dari rutinitas
+                      harian saya. Fitur-fitur di dalamnya sangat lengkap, mulai
+                      dari meditasi, yoga, hingga artikel tentang kesehatan
+                      mental. Saya merasa lebih bahagia dan lebih siap
+                      menghadapi tantangan kuliah."
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex flex-col items-center justify-center mt-10 space-x-3"
+                  >
+                    <img
+                      class="w-10 h-10 rounded-full mb-5"
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                      alt="profile picture"
+                    />
+                    <div class="flex flex-col items-center">
+                      <h5 class="mb-1 text-2xl font-medium">Iqbal Ramadhan</h5>
+                      <p class="text-sm font-light text-gray-400">
+                        Sistem Informasi
+                      </p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute z-30 flex md:hidden -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-10 left-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 hidden md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="1000"
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 group-hover:bg-emerald-200 group-focus:ring-4 group-focus:ring-emerald-300 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-emerald-400 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 hidden md:flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-emerald-100 group-hover:bg-emerald-200 group-focus:ring-4 group-focus:ring-emerald-300 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-emerald-400 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section Start -->
+
+    <!-- Blogs Section Start -->
+    <section id="blogs">
+      <div
+        class="xl:max-w-screen-2xl mx-auto flex flex-col items-center justify-center px-4 sm:px-12 lg:px-32 py-24 min-h-screen"
+      >
+        <div class="mb-5 lg:mb-10 mx-auto md:max-w-screen-md text-center">
+          <h2
+            class="mb-5 font-semibold text-emerald-600"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Blog
+          </h2>
+          <p
+            class="mb-5 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+          >
+            Kumpulan Artikel yang Membahas Tentang Masalah Kesehatan Mental
+          </p>
+        </div>
+        <div
+          class="mx-auto flex flex-wrap justify-center items-center max-w-2xl gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          <!-- Blog 1 -->
+          <article
+            class="flex max-w-sm flex-col items-start justify-between"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./images/blog-1.jpg"
+              class="aspect-video object-cover mb-3 rounded-xl"
+              alt=""
+            />
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >26 Oktober 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Edukasi</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Mengatasi Burnout di Jurusan TI: Tips Praktis untuk Mahasiswa
+                </a>
+              </h3>
+            </div>
+            <div class="relative mt-4 flex items-center gap-x-4">
+              <img
+                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="size-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm/6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Budi Santoso
+                  </a>
+                </p>
+                <p class="text-gray-600">
+                  Mahasiswa Teknik Informatika, Angkatan 2021
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- Blog 2 -->
+          <article
+            class="flex max-w-sm flex-col items-start justify-between"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./images/blog-2.jpg"
+              class="aspect-video object-cover mb-3 rounded-xl"
+              alt=""
+            />
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >2 November 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Edukasi</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Tekanan Deadline dan Kesehatan Mental Mahasiswa TI
+                </a>
+              </h3>
+            </div>
+            <div class="relative mt-4 flex items-center gap-x-4">
+              <img
+                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="size-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm/6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Siti Aminah, M.Kom.
+                  </a>
+                </p>
+                <p class="text-gray-600">Dosen Psikologi Komputasi</p>
+              </div>
+            </div>
+          </article>
+          <!-- Blog 3 -->
+          <article
+            class="flex max-w-sm flex-col items-start justify-between"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./images/blog-3.jpg"
+              class="aspect-video object-cover mb-3 rounded-xl"
+              alt=""
+            />
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500"
+                >9 November 2023</time
+              >
+              <a
+                href="#"
+                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                >Edukasi</a
+              >
+            </div>
+            <div class="group relative">
+              <h3
+                class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600"
+              >
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Menjaga Keseimbangan Hidup Kuliah dan Sosial bagi Mahasiswa TI
+                </a>
+              </h3>
+            </div>
+            <div class="relative mt-4 flex items-center gap-x-4">
+              <img
+                src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="size-10 rounded-full bg-gray-50"
+              />
+              <div class="text-sm/6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Ahmad Rizki
+                  </a>
+                </p>
+                <p class="text-gray-600">Ketua HIMATI Periode 2023/2024</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Blogs Section End -->
+
+    <!-- Call To Action -->
+    <section id="contact">
+      <div class="xl:max-w-screen-2xl mx-auto px-4 sm:px-12 lg:px-32 py-24">
+        <div
+          class="flex items-center bg-emerald-600 rounded-xl h-72 relative overflow-hidden"
+        >
+          <div class="w-full md:w-1/2 px-10">
+            <h2 class="text-white text-3xl font-semibold mb-8">
+              Ayo Dapatkan Produk Bubur Hanjeli Instan Sekarang Juga!
+            </h2>
+            <div>
+              <a
+                href="https://wa.me/62882001912986"
+                class="text-white bg-emerald-400 hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-400 font-medium rounded-xl hover:shadow-lg text-sm px-6 py-4 duration-500"
+                >Pesan Sekarang</a
+              >
+            </div>
+          </div>
+          <div class="absolute right-0 bottom-0 h-72">
+            <img src="./images/asset-cta.png" class="h-full" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="bg-emerald-600">
+      <div
+        class="xl:max-w-screen-2xl mx-auto px-4 sm:px-12 lg:px-32 py-8 lg:py-10"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="#" class="flex items-center mb-5">
+              <img
+                src="./images/icon1.png"
+                class="h-8 me-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-white text-xl font-medium whitespace-nowrap"
+                >BuburHanjeli</span
+              >
+            </a>
+            <p class="text-white sm:w-2/3 lg:w-1/2">
+              Platform ini hadir sebagai solusi makanan sehat, praktis, dan penuh manfaat. 
+              Kami percaya bahwa kesehatan dapat dimulai dari makanan yang baik.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                Services
+              </h2>
+              <ul class="text-white font-medium">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" class="hover:underline"
+                    >Dropshipper</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" class="hover:underline"
+                    >Product Counseling</a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="https://tailwindcss.com/" class="hover:underline"
+                    >Support Group</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                Navigation
+              </h2>
+              <ul class="text-white font-medium">
+                <li class="mb-4">
+                  <a href="#home" class="hover:underline">Beranda</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#about" class="hover:underline">Tentang Kami</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#services" class="hover:underline">Layanan</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#testimonials" class="hover:underline">Testimoni</a>
+                </li>
+                <li class="mb-4">
+                  <a href="#blogs" class="hover:underline">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">
+                Legal
+              </h2>
+              <ul class="text-white font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center"
+            >© 2025 <a href="#" class="hover:underline">Cipati_Bubur_Hanjeli</a> by Team P2MW. All
+            Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-900">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 ms-5">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 ms-5">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Flowbite Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Pomodoro Script -->
+    <script>
+      let focusButton = document.getElementById("focus");
+      let buttons = document.querySelectorAll(".btn");
+      let shortBreakButton = document.getElementById("shortbreak");
+      let longBreakButton = document.getElementById("longbreak");
+      let startBtn = document.getElementById("btn-start");
+      let reset = document.getElementById("btn-reset");
+      let pause = document.getElementById("btn-pause");
+      let time = document.getElementById("time");
+      let set;
+      let active = "focus";
+      let count = 59;
+      let paused = true;
+      let minCount = 24;
+      time.textContent = `${minCount + 1}:00`;
+      let alarmSound = new Audio("./music/critical-alarm-1004.wav");
+
+      const appendZero = (value) => {
+        value = value < 10 ? `0${value}` : value;
+        return value;
+      };
+
+      reset.addEventListener(
+        "click",
+        (resetTime = () => {
+          pauseTimer();
+          switch (active) {
+            case "long":
+              minCount = 14;
+              break;
+            case "short":
+              minCount = 4;
+              break;
+            default:
+              minCount = 24;
+              break;
+          }
+          count = 59;
+          time.textContent = `${minCount + 1}:00`;
+          document.title = `Pomodoro Timer - ${minCount + 1}:00`;
+        })
+      );
+
+      const removeFocus = () => {
+        buttons.forEach((btn) => {
+          btn.classList.remove("btn-focus");
+        });
+      };
+
+      focusButton.addEventListener("click", () => {
+        removeFocus();
+        focusButton.classList.add("btn-focus");
+        pauseTimer();
+        minCount = 24;
+        count = 59;
+        time.textContent = `${minCount + 1}:00`;
+        document.title = `Pomodoro Timer - ${minCount + 1}:00`;
+      });
+
+      shortBreakButton.addEventListener("click", () => {
+        active = "short";
+        removeFocus();
+        shortBreakButton.classList.add("btn-focus");
+        pauseTimer();
+        minCount = 4;
+        count = 59;
+        time.textContent = `${appendZero(minCount + 1)}:00`;
+        document.title = `Pomodoro Timer - ${appendZero(minCount + 1)}:00`;
+      });
+
+      longBreakButton.addEventListener("click", () => {
+        active = "long";
+        removeFocus();
+        longBreakButton.classList.add("btn-focus");
+        pauseTimer();
+        minCount = 14;
+        count = 59;
+        time.textContent = `${minCount + 1}:00`;
+        document.title = `Pomodoro Timer - ${minCount + 1}:00`;
+      });
+
+      pause.addEventListener(
+        "click",
+        (pauseTimer = () => {
+          paused = true;
+          clearInterval(set);
+          startBtn.classList.remove("hide");
+          pause.classList.remove("show");
+          reset.classList.remove("show");
+          document.title = `Pomodoro Timer - Paused`;
+        })
+      );
+
+      startBtn.addEventListener("click", () => {
+        reset.classList.add("show");
+        pause.classList.add("show");
+        startBtn.classList.add("hide");
+        startBtn.classList.remove("show");
+        if (paused) {
+          paused = false;
+          time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
+          document.title = `Pomodoro Timer - ${appendZero(
+            minCount
+          )}:${appendZero(count)}`;
+
+          set = setInterval(() => {
+            count--;
+            time.textContent = `${appendZero(minCount)}:${appendZero(count)}`;
+            document.title = `Pomodoro Timer - ${appendZero(
+              minCount
+            )}:${appendZero(count)}`;
+
+            if (count == 0) {
+              if (minCount != 0) {
+                minCount--;
+                count = 60;
+              } else {
+                clearInterval(set);
+                document.title = `Pomodoro Timer - Done!`;
+                alarmSound.play();
+              }
+            }
+          }, 1000);
+        }
+      });
+    </script>
+  </body>
+</html>
